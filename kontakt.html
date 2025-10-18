@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Studentska zadruga</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Zadruga PRAVI POBEDNIK</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Meni">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Početna</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="onama.html">O nama</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="poslovi.html">Poslovi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="studenti.html">Studenti</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontakt.html">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container py-5">
+  <div class="row g-5">
+    <!-- LEVA FORMA -->
+    <div class="col-lg-6 col-md-12">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h4 class="mb-4 text-center">Prijava studenata</h4>
+          <form id="studentForm">
+            <div class="mb-3">
+              <label class="form-label">Ime i prezime</label>
+              <input type="text" class="form-control" name="ime" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Fakultet</label>
+              <input type="text" class="form-control" name="fakultet" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Godina fakulteta</label>
+              <input type="number" min="1" max="6" class="form-control" name="godina" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Poruka</label>
+              <textarea class="form-control" rows="3" name="poruka"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Pošalji</button>
+          </form>
+
+          <div id="studentAlert" class="alert alert-info mt-4 d-none"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DESNA FORMA -->
+    <div class="col-lg-6 col-md-12">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h4 class="mb-4 text-center">Ponudi posao</h4>
+          <form id="employerForm">
+            <div class="mb-3">
+              <label class="form-label">Ime firme</label>
+              <input type="text" class="form-control" name="firma" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Broj studenata</label>
+              <input type="number" min="1" class="form-control" name="broj" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Pozicija</label>
+              <input type="text" class="form-control" name="pozicija" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Poruka</label>
+              <textarea class="form-control" rows="3" name="poruka"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Pošalji</button>
+          </form>
+
+          <div id="employerAlert" class="alert alert-success mt-4 d-none"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer bg-white text-black mt-5 pt-4 border-top">
+  <div class="container pb-3">
+    <div class="row text-center text-md-start align-items-center">
+      <!-- Leva strana -->
+      <div class="col-md-6 mb-4 mb-md-0">
+      
+        <p class="mb-1">Adresa: Masarikova 25, Novi Sad</p>
+        <p class="mb-0">Email: <a href="mailto:pravipobednik@gmail.com" class="text-decoration-none text-black">pravipobednik@gmail.com</a></p>
+      </div>
+
+      <!-- Desna strana -->
+      <div class="col-md-6 text-md-end">
+       
+        <p class="mb-2">Telefon: <a href="tel:0214737108" class="text-decoration-none text-black">021/473-7108</a></p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/pravipobednik/?locale=sr_RS" class="text-black me-3"><i class="bi bi-facebook fs-4"></i></a>
+          <a href="https://www.instagram.com/pravi_pobednik/" class="text-black me-3"><i class="bi bi-instagram fs-4"></i></a>
+          <a href="https://rs.linkedin.com/in/pravi-pobednik-omladinska-zadruga-68760791" class="text-black"><i class="bi bi-linkedin fs-4"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-light py-3 border-top">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2025 | Aleksandar Drvendžija</p>
+    </div>
+  </div>
+</footer>
+
+<script src="forme.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

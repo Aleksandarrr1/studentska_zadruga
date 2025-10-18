@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Studentska zadruga</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Zadruga PRAVI POBEDNIK</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Meni">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Početna</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="onama.html">O nama</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="poslovi.html">Poslovi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="studenti.html">Studenti</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontakt.html">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section class="hero-section d-flex align-items-end">
+  <div class="container text-center mb-5">
+    <a href="kontakt.html" class="btn btn-primary btn-lg">Pridruži se</a>
+  </div>
+</section>
+
+<!-- Sekcija sa brojačima -->
+<section class="py-5">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-5 col-md-6 mb-4">
+        <div class="counter-box bg-white p-4 rounded shadow">
+          <h2 class="counter text-primary" data-target="1254">0</h2>
+          <p class="mb-0">Članova zadruge</p>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 mb-4">
+        <div class="counter-box bg-white p-4 rounded shadow">
+          <h2 class="counter text-primary" data-target="118">0</h2>
+          <p class="mb-0">Poslova u ponudi</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Carousel sekcija -->
+<section class="py-5">
+  <div class="container">
+    <div id="studentCarousel" class="carousel slide" data-bs-ride="carousel">
+      
+      <!-- Indikatori -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#studentCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slajd 1"></button>
+        <button type="button" data-bs-target="#studentCarousel" data-bs-slide-to="1" aria-label="Slajd 2"></button>
+        <button type="button" data-bs-target="#studentCarousel" data-bs-slide-to="2" aria-label="Slajd 3"></button>
+      </div>
+
+      <!-- Slike -->
+      <div class="carousel-inner rounded shadow">
+        <div class="carousel-item active">
+          <img src="img/slajd1.jpg" class="d-block w-100" alt="Slajd 1">
+        </div>
+        <div class="carousel-item">
+          <img src="img/slajd2.jpg" class="d-block w-100" alt="Slajd 2">
+        </div>
+        <div class="carousel-item">
+          <img src="img/slajd3.jpg" class="d-block w-100" alt="Slajd 3">
+        </div>
+      </div>
+
+      <!-- Strelice -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#studentCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Prethodni</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#studentCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Sledeći</span>
+      </button>
+
+    </div>
+  </div>
+</section>
+<!-- Futer -->
+<footer class="footer bg-white text-center text-black py-4 mt-5">
+  <div class="container">
+    <p class="mb-0">&copy; 2025 | Aleksandar Drvendžija</p>
+  </div>
+</footer>
+
+<script src="brojac.js"></script>
+<!-- Bootstrap JS -->
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
